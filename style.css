@@ -1,0 +1,133 @@
+.ss{
+    color:yellow;
+}
+.ss:hover {
+    color:white;
+}
+
+body,html{
+    height:100%;
+    
+}
+body{
+    background-image: url('water.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center
+}
+
+iframe{
+    margin: auto;
+    align-content: center;
+    width: 100%;
+
+}
+
+.div1{
+    margin: auto;
+    align-content: center;
+    width: 50%;
+    background-image: linear-gradient(rgb(112, 187, 212),white);
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h1{
+    color: #0c434f; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-weight: bold; 
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+    font-size: 80px;
+    padding-top: 6px;
+}
+
+p{
+    font-size: large;
+    padding-left: 6px;
+    padding-right: 4px;
+
+}
+h2{
+    padding-left: 6px;
+}
+
+hr{
+    width:70%; 
+    text-align:center;
+    height:2px;
+    
+    background-color:rgb(26, 26, 63);
+
+}
+
+.img1{
+    border-radius: 60%;
+}
+.img2{
+    border-radius: 100%;
+    padding-bottom: 8px;
+}
+.img3{
+    padding-bottom: 8px;
+    border-radius:20px;
+    
+}
+
+.img4{
+    padding-bottom: 8px;
+}
+
+video{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 22%;
+    width:60%;
+    
+}
+
+footer{
+    margin: auto;
+    align-content: center;
+    width: 40%;
+    height:3%;
+    background-image:linear-gradient(lightblue,white);
+}
+
+.imgg{
+    position: absolute;
+    padding-left: 0%;
+}
+.parent {
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+  .child {
+    
+    border: 1px solid rgb(68, 0, 255);
+    
+    
+    
+    
+  }
+  #zoomA {
+   
+    width: 900px;
+    height: auto;
+   
+    
+    transition: transform ease-in-out 0.3s;
+  }
+   
+ 
+  #zoomA:hover { 
+    transform: scale(1.2); }

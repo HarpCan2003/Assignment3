@@ -1,0 +1,88 @@
+@import 'style.css';
+
+
+nav {
+  ul {
+    li {
+      a {
+        color: yellow;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+
+button {
+  background-color: red;
+  border: none;
+}
+
+
+.contact-form {
+  border: 1px dashed black;
+}
+
+
+button {
+  text-transform: uppercase;
+  &:after {
+    content: ' >';
+  }
+}
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"> 
+</script>
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 50) {
+      $('nav').addClass('fixed-nav');
+    } else {
+      $('nav').removeClass('fixed-nav');
+    }
+  });
+});
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
+</script>
+
+$(document).ready(function(){
+  $('.gallery').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: true,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
+  });
+});
+
+$('.slick-slide').click(function(){
+  $(this).addClass('active');
+});
+$('.close-btn').click(function(){
+  $('.slick-slide').removeClass('active');
+});
+$('.slick-list').click(function(e){
+  if (e.target == this) {
+    $('.slick-slide').removeClass('active');
+  }
+});
+
+git clone <repository-url>
+
+git add .
+git commit -m "Your commit message he
+
+git push origin main
